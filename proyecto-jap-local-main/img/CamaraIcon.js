@@ -1,0 +1,9 @@
+export function CameraIcon(){
+    return (
+        /* html */`
+        <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewBox="0 0 16 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H0V14H16V3H13L11 1H5L3 3ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="#0066ffff"/>
+        </svg>
+        `
+    )
+}

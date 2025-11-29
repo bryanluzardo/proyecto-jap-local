@@ -1,0 +1,10 @@
+:root {
+  --icon-color: #000000;
+}
+body.dark-mode {
+  --icon-color: #ffffff;
+}
+
+main{
+  padding-top: 60px;
+}

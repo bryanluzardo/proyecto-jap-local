@@ -1,0 +1,33 @@
+/* Esto es general, tiene que estar en un css para
+información de producto (general) no esto, pero lo
+dejo acá hasta que se arregle */
+#contenedorProductos {
+  display: flex;
+  flex-direction: column;
+}
+
+/* de acá para abajo sigue normal*/
+.related-product {
+  margin: 20px;
+  scale: 1.2;
+}
+
+.related-product-image {
+  aspect-ratio: 1 / 1;
+  width: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.related-product h4 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.related-product:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: translateY(-2px);
+}

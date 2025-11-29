@@ -1,0 +1,34 @@
+/* styles.css */
+body {
+  background: black;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+/* tamaño final del SVG más compacto */
+.loader-svg {
+  width: 64px;
+  height: 64px;
+  overflow: visible; /* evita recortes por el blur */
+}
+
+/* puntos y transiciones */
+.dot {
+  fill: white;
+  transition:
+    cx 0.45s cubic-bezier(0.3, 1.4, 0.4, 1),
+    cy 0.45s cubic-bezier(0.3, 1.4, 0.4, 1),
+    r 0.45s cubic-bezier(0.3, 1.4, 0.4, 1);
+}
+
+/* transformación del grupo centrada correctamente y sin usar px */
+#gooey {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.5s linear;
+}
+
+#gooey:hover {
+  transform: rotate(360deg);
+}
