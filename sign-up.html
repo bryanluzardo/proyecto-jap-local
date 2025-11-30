@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>eMercado - Todo lo que busques está aquí</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="css/login.css" rel="stylesheet" />
+    <script src="js/sign-up.js" type="module"></script>
+    <style>
+      body {
+        background-color: rgb(248, 249, 250);
+        backdrop-filter: blur(200px);
+      }
+    </style>
+  </head>
+  <body id="login-page">
+    <main>
+      <div class="container">
+        <form id="sign-up-form">
+          <div class="form-container">
+            <div class="info-form">
+              <p id="login-title">
+                Sign <span style="color: #9da7ff">Up</span>
+              </p>
+              <div class="username">
+                <label for="username">Name</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="name"
+                  required
+                />
+                <small class="advertencia-username hidden" style="color: red"
+                  >El username debe tener más de 5 caracteres y menor de
+                  16</small
+                >
+                <small class="advertencia-username-existe hidden"
+                  >Este usuario ya esta registrado</small
+                >
+              </div>
+              <div class="email">
+                <label for="mail">Mail: </label>
+                <input
+                  type="mail"
+                  id="mail"
+                  name="mail"
+                  placeholder="mail@mail.com"
+                  required
+                />
+                <small class="advertencia-mail hidden" style="color: red"
+                  >El formato es inválido</small
+                >
+                <small class="advertencia-mail-existe hidden" style="color: red"
+                  >Este mail ya se encuentra registrado</small
+                >
+              </div>
+              <div class="cellphone">
+                <label for="cellphone">Cellphone Number:</label>
+                <input
+                  type="tel"
+                  id="cellphone"
+                  name="cellphone"
+                  placeholder="Please enter your cellphone number"
+                  required
+                />
+                <small class="advertencia-cellphone hidden" style="color: red"
+                  >Ingrese sólo números</small
+                >
+              </div>
+              <div class="contraseña">
+                <label for="password">Password</label>
+                <div class="contraseña-input-y-ojo">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="password"
+                    required
+                  />
+                  <i id="togglePassword" class="fa-solid fa-eye"></i>
+                </div>
+                <small class="advertencia-password hidden" style="color: red"
+                  >La contraseña debe tener mínimo 8 carácteres e incluir un
+                  número.</small
+                >
+              </div>
+              <button type="submit" id="btn-login">Sign Up</button>
+              <div class="terminos">
+                <input type="checkbox" id="terminos" name="terminos" />
+                <label for="terminos"
+                  ><small
+                    >Al marcar esta casilla y hacer clic en "registrarse",
+                    confirmo que he leído y acepto los términos y
+                    condiciones.</small
+                  ></label
+                >
+                <small class="advertencia-terminos hidden" style="color: red"
+                  >Por favor acepte los términos y condiciones.</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="imagen-ecommerce">
+            <img src="img/JaP pero en negro.png" alt="ecommerce" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+.contenedorcito {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.producto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  box-sizing: border-box;
+  margin: 15px;
+  background-color: #ffffff;
+  border: 1px solid #007aff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  gap: 8px;
+}
+
+.producto:hover {
+  transform: translateY(-2px);
+  background-color: #007aff;
+  color: rgb(0, 0, 0);
+}
+
+.producto:hover h3 {
+  color: white;
+}
+
+.informacion-producto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  padding-right: 30px;
+}
+
+.informacion-producto h3 {
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+.informacion-producto p {
+  font-size: 0.9rem;
+}
+
+.informacion-producto span {
+  font-size: 0.9rem;
+}
+
+.producto .imagen {
+  flex: 0 0 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* Modo oscuro con el botón */
+
+body.dark-mode {
+  background-color: #1e2020;
+  color: #ffffff;
+}
+
+body.dark-mode .producto {
+  background-color: #000000;
+  border: 1px solid #007aff;
+  color: #ffffff;
+}
+
+body.dark-mode .producto h3 {
+  color: #d3e8ff;
+}
+
+body.dark-mode .producto:hover {
+  transform: translateY(-2px);
+  background-color: #d3e8ff;
+  color: rgb(0, 0, 0);
+}
+
+body.dark-mode .producto:hover h3 {
+  color: #000000;
+}
+
+/* Modo oscuro de dispositivo */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e2020;
+    color: #ffffff;
+  }
+
+  .producto {
+    background-color: #000000;
+    border: 1px solid #007aff;
+    color: #ffffff;
+  }
+
+  .producto h3 {
+    color: #d3e8ff;
+  }
+
+  .producto:hover {
+    transform: translateY(-2px);
+    background-color: #d3e8ff;
+    color: rgb(0, 0, 0);
+  }
+
+  .producto:hover h3 {
+    color: #000000;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedorcito {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>eMercado - Todo lo que busques está aquí</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Loading.css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="css/login.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: rgb(248, 249, 250);
+        backdrop-filter: blur(200px);
+      }
+    </style>
+  </head>
+  <body id="login-page">
+    <main style="position: relative">
+      <div class="alert hidden">
+        <p id="alert-message">Registrado con éxito, por favor inicia sesión</p>
+      </div>
+      <div class="container" style>
+        <form
+          id="login-form"
+          action="http://localhost:3000/login"
+          method="post"
+        >
+          <div class="form-container">
+            <div class="info-form">
+              <p id="login-title">
+                Sign <span style="color: #9da7ff">In</span>
+              </p>
+              <div class="username">
+                <label for="username">Name</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="name"
+                  required
+                />
+              </div>
+              <div class="contraseña">
+                <label for="password">Password</label>
+                <div class="contraseña-input-y-ojo">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="password"
+                    required
+                  />
+                  <i id="togglePassword" class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+              <button type="submit" id="btn-login">Log in</button>
+              <small
+                ><a href="/sign-up.html">No tenes usuario? Registrate</a></small
+              >
+            </div>
+          </div>
+          <div class="imagen-ecommerce">
+            <img src="img/JaP pero en negro.png" alt="ecommerce" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="js/login.js" type="module"></script>
+</html>

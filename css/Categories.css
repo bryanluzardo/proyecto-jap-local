@@ -1,0 +1,151 @@
+/* modo día de la lavada de cara numero 1000 que le hemos dado a esta cría */
+
+#cat-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, 30em);
+  gap: 1.5em;
+  font-family: "SFrounded", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  margin-right: 8.7em;
+  background-color: #fff;
+  color: #111;
+}
+
+h2 {
+  font-family: "SFrounded", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-left: 9em;
+  margin-top: 2em;
+}
+
+.list-group-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1.5px solid #c7d7ff;
+  border-radius: 1.5em;
+  background-color: #fff;
+  padding: 1.5em;
+  width: auto;
+  max-width: 30em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.list-group-item:hover {
+  background: #b0d8ff;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.01);
+}
+
+.img-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+#filtros-superior {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+#filtros-inferior {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px;
+  padding: 8px 10px;
+  align-items: center;
+  font-family: "SFrounded", sans-serif;
+}
+
+#filtros-inferior input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.3em 0.5em;
+  border-radius: 0.5em;
+  border-width: 0.1em;
+}
+
+#cat-list-container {
+  margin-top: 20px;
+}
+
+#clearRangeFilter {
+background: none;
+  border: none;
+  color: #0066dd;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#rangeFilterCount {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#rangeFilterCount:hover {
+  background-color: #4691e6;
+}
+
+/* dark mode entrega 7 brrrr */
+
+body.dark-mode #cat-list-container {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .list-group-item {
+  background-color: #141414;
+  border-color: #444;
+  box-shadow: 0 1px 8px rgba(120, 195, 245, 0.397);
+  border-color: #4691e6;
+}
+
+body.dark-mode .list-group-item:hover {
+  background-color: #859fb3;
+}
+
+body.dark-mode #filtros-superior,
+body.dark-mode #filtros-inferior {
+color: #f0f0f0;
+} 
+
+/* Responsive */
+@media (max-width: 768px) {
+  #cat-list-container {
+    grid-template-columns: 1fr;
+    margin-right: 0;
+    padding: 0 1em;
+  }
+
+  h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .list-group-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #filtros-superior,
+  #filtros-inferior {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
