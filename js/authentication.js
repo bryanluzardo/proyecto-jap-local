@@ -27,7 +27,6 @@ export const saveProducts = async (userIdParam, productsArray) => {
   const url = `http://localhost:9000/cart?ids=${newParams.join(
     ","
   )}&id=${userIdParam}`;
-  console.log(url);
   try {
     const res = await fetch(url, {
       method: "PUT",

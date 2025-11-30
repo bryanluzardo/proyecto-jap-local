@@ -89,7 +89,7 @@ const CartProductCard = ({ product }) => {
   increase.addEventListener("click", () => {
     const idx = findProductIndex(prod);
     if (idx === -1) return;
-    if (!cart[idx].quantity) cart[idx].quantity = 0;
+    if (!cart[idx].quantity) cart[idx].quantity = 1;
     cart[idx].quantity = Number(cart[idx].quantity) + 1;
     localStorage.setItem("cart", JSON.stringify(cart));
     renderCart();
